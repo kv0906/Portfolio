@@ -1,0 +1,431 @@
+/*Placeholder selectors*/
+
+%transition {
+    transition: all .25s;
+}
+
+
+/*=Typography=*/
+
+@font-face {
+    font-family: 'lato-reg';
+    src: url('fonts/Lato-Regular.otf');
+    src: url('fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'lato-bold';
+    src: url('fonts/Lato-Bold.otf');
+    src: url('fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'lato-light';
+    src: url('fonts/Lato-Light.otf');
+    src: url('fonts/Lato-Light.ttf');
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.navbar a,
+.sec-about p {
+    color: black;
+    text-align: center;
+}
+
+.navbar a {
+    font-size: 16px;
+}
+
+.nav .navbar-nav a:hover {
+    color: #DA4177;
+}
+
+.navbar .fa-external-link {
+    font-size: 10px;
+}
+
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #DA4177;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #DA4177;
+}
+
+.main-heading {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+
+.container > h1 {
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sec-services h2,
+.sec-services p {
+    font-weight: 300;
+    text-align: center;
+}
+
+.sec-testimonials p {
+    font-style: italic;
+}
+
+.sec-contact .btn {
+    text-transform: uppercase;
+}
+
+.soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*=Base=*/
+
+section {
+    padding: 5em 0;
+}
+
+footer {
+    padding: 3em 0;
+}
+
+form {
+    @media screen and (max-width: 768px) and (min-width: 485px) {
+        max-width: 70%;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    @extend %transition;
+}
+
+hr {
+    margin-bottom: 3em;
+    width: 7%;
+}
+
+
+/*=Layout=*/
+
+.sec-folio .row {
+    margin-bottom: 3em;
+}
+
+.sec-folio img {
+    max-width: 100%;
+}
+
+
+/*Header*/
+
+.navbar-default {
+    background: #fff;
+}
+
+.navbar .fa-external-link {
+    vertical-align: top;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: $red;
+}
+
+.navbar-default .navbar-nav>li>a:active {
+    color: darken($red, 5%);
+}
+
+
+/*Main*/
+
+.sec-main {
+    height: 650px;
+}
+
+.greeting-heading {
+    height: 100%;
+    position: relative;
+}
+
+.h-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 500;
+    left: -400;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #e8c060;
+}
+
+.e-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 500;
+    left: -160;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #ea9078;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.l-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 500;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #65c3ad;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.l-heading-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 500;
+    left: 110;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #65c3ad;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.o-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 500;
+    left: 270;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #dc6b6b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.dot-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 500;
+    left: 400;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #ea9078;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.main-heading {
+    position: absolute;
+    top: 100;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: black;
+}
+
+
+/*About*/
+
+.sec-about a,
+h1,
+{
+    color: white;
+}
+
+.about-intro p {
+    color: white;
+}
+
+.sec-about h1 {
+    position: absolute;
+    right: 50;
+    bottom: 50;
+}
+
+.about-heading {
+    position: absolute;
+    right: 90;
+    bottom: 60;
+}
+
+.sec-about {
+    position: relative;
+    background: url(/images/about-pic.jpeg) no-repeat right center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 10px;
+    background-color: #FFE952;
+    color: white;
+}
+
+.sec-about a {
+    text-decoration: underline;
+}
+
+
+/*Skilss*/
+
+.skill_css {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+
+.sec-services {
+    background: #f9f9f9;
+}
+
+.sec-services i {
+    display: block;
+    margin: auto;
+    width: 45px;
+}
+
+.sec-services .fa-paint-brush {
+    width: 64px;
+}
+
+.sec-services .fa-code {
+    width: 68px
+}
+
+.sec-services h2 {
+    margin: 1em 0;
+}
+
+
+/*Testimonials*/
+
+.sec-testimonials {
+    background: #f9f9f9;
+}
+
+
+/*Contact*/
+
+.sec-contact .form-control:focus {
+    border-color: $red;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
+}
+
+.sec-contact .btn {
+    padding: .5rem 1.75rem;
+    background: #000;
+    font-size: .95rem;
+    color: #fff;
+    @extend %transition;
+    &:hover,
+    &:focus {
+        background: $red;
+        border-color: darken($red, 10%);
+    }
+}
+
+
+/*Footer*/
+
+footer {
+    background: #000;
+}
+
+.soc-media-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.soc-media-ul li:not(:first-child) a {
+    margin-left: 1em;
+}
+
+.soc-media-ul a {
+    display: block;
+    padding: 0.5em .65rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+    /* Hover effect */
+    &:hover,
+    &:focus {
+        color: $red;
+    }
+}
