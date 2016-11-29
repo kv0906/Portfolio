@@ -175,117 +175,69 @@ hr {
 }
 
 .greeting-heading {
+    text-align: center;
     height: 100%;
-    position: relative;
+    perspective: 1000px;
 }
 
-.h-heading {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 500;
-    left: -400;
-    z-index: 2;
-    padding: 0;
-    margin: auto;
-    height: 40px;
+.greeting-heding span {
+    display: inline-block;
+    /*    margin-left: -20px;*/
+    /*    transform-origin: 30% 50%;*/
+}
+
+
+/*animation*/
+
+.greeting-heading span:nth-child(1) {
     font-family: 'Open Sans', sans-serif;
     font-size: 200px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    font-weight: 600;
     color: #e8c060;
+    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
 }
 
-.e-heading {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 500;
-    left: -160;
-    z-index: 2;
-    padding: 0;
-    margin: auto;
-    height: 40px;
+.greeting-heading span:nth-child(2) {
+    /*    margin-right: 30px;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 600;
     color: #ea9078;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 200px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 3px;
+    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) .2s both;
 }
 
-.l-heading {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 500;
-    left: 0;
-    z-index: 2;
-    padding: 0;
-    margin: auto;
-    height: 40px;
+.greeting-heading span:nth-child(3) {
+    /*    margin-right: 30px;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 600;
     color: #65c3ad;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 200px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 3px;
+    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) .4s both;
 }
 
-.l-heading-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 500;
-    left: 110;
-    z-index: 2;
-    padding: 0;
-    margin: auto;
-    height: 40px;
+.greeting-heading span:nth-child(4) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 600;
     color: #65c3ad;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 200px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 3px;
+    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) .6s both;
 }
 
-.o-heading {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 500;
-    left: 270;
-    z-index: 2;
-    padding: 0;
-    margin: auto;
-    height: 40px;
+.greeting-heading span:nth-child(5) {
+    /*    margin-left: -28px;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200px;
+    font-weight: 600;
     color: #dc6b6b;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 200px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 3px;
+    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) .8s both;
 }
 
-.dot-heading {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 500;
-    left: 400;
-    z-index: 2;
-    padding: 0;
-    margin: auto;
-    height: 40px;
-    color: #ea9078;
+.greeting-heading span:nth-child(6) {
     font-family: 'Open Sans', sans-serif;
     font-size: 200px;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 3px;
+    font-weight: 600;
+    color: #ea9078;
+    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
 }
 
 .main-heading {
@@ -299,6 +251,7 @@ hr {
     margin: auto;
     height: 40px;
     color: black;
+    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
 }
 
 
@@ -427,5 +380,26 @@ footer {
     &:hover,
     &:focus {
         color: $red;
+    }
+}
+
+
+/*-----------------------Animation-----------------------*/
+
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframs flip {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
     }
 }
