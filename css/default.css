@@ -1,37 +1,14 @@
-/*Placeholder selectors*/
-
-%transition {
-    transition: all .25s;
-}
-
-
 /*=Typography=*/
 
 @font-face {
-    font-family: 'lato-reg';
-    src: url('fonts/Lato-Regular.otf');
-    src: url('fonts/Lato-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'lato-bold';
-    src: url('fonts/Lato-Bold.otf');
-    src: url('fonts/Lato-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'lato-light';
-    src: url('fonts/Lato-Light.otf');
-    src: url('fonts/Lato-Light.ttf');
-}
-
-html {
-    font-size: 16px;
+    font-family: 'Ubuntu';
+    src: url('/fonts/UbuntuL.ttf')
+    /*    src: url('fonts/Lato-Regular.ttf');*/
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    /*    font-family: 'Open Sans', sans-serif;*/
+    /*    font-weight: 300;*/
 }
 
 .navbar a,
@@ -52,26 +29,19 @@ body {
     font-size: 10px;
 }
 
-.navbar-brand {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100px;
+.navba-default .navbar-brand {
+    font-size: 50px;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
+    font-size: 18px;
     color: #DA4177;
 }
 
 .navbar-default .navbar-brand:hover {
+    font-size: 18px;
     color: #DA4177;
-}
-
-.main-heading {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 9px;
-    text-transform: uppercase;
 }
 
 .container > h1 {
@@ -187,7 +157,7 @@ hr {
 }
 
 
-/*animation*/
+/*Animation*/
 
 .greeting-heading span:nth-child(1) {
     font-family: 'Open Sans', sans-serif;
@@ -241,6 +211,10 @@ hr {
 }
 
 .main-heading {
+    font-family: 'Ubuntu', monospace;
+    font-size: 40px;
+    text-align: center;
+    /*    text-transform: uppercase;*/
     position: absolute;
     top: 100;
     right: 0;
@@ -251,7 +225,6 @@ hr {
     margin: auto;
     height: 40px;
     color: black;
-    animation: pulse 2s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
 }
 
 
@@ -386,6 +359,79 @@ footer {
 
 /*-----------------------Animation-----------------------*/
 
+
+/* code for animated blinking cursor */
+
+.typed-cursor {
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes pulse {
     from {
         opacity: 0;
@@ -395,7 +441,7 @@ footer {
     }
 }
 
-@keyframs flip {
+@keyframes flip {
     from {
         transform: rotateX(90deg);
     }
