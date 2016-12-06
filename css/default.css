@@ -414,7 +414,7 @@ p {
 .sec-folio {
     position: relative;
     height: auto;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
 }
 
 .sec-folio .row {
@@ -467,77 +467,104 @@ p {
     top: 0;
     left: 0;
     width: 400px;
-    height: 500px;
-    /*    border: solid 1px black;*/
-    /*    border: solid 1px black;*/
+    height: 600px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
 }
 
 .item img {
+    position: relative;
+    z-index;
+    -1;
     width: 100%;
+    /*    height: 100%;*/
 }
+
+.item:hover .explore {
+    top: 0;
+    left: 0;
+    visibility: visible;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/*
+.item img:hover .explore {
+    visibility: visible
+}
+*/
 
 .airsound {
     position: absolute;
     top: 0;
     left: 400;
-    height: 300px;
+    height: 500px;
     width: 400px;
+    /*    background-color: #f9f9f9;*/
+    margin-bottom: 20px;
     /*    border: solid 1px black;*/
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
 }
 
 .airsound img {
+    position: relative;
     width: 100%;
 }
-
-
-/*
-.item .airsound img {
-    position: absolute;
-    width: 100%;
-    top: 0;
-}
-*/
 
 .kvbox {
     position: absolute;
     top: 0;
     left: 800;
-    height: 600px;
+    height: 800px;
     width: 300px;
+    /*    background-color: #f9f9f9;*/
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
 }
 
 .kvbox img {
+    position: relative;
     width: 100%;
 }
-
-
-/*
-.item3 .kvbox img {
-    width: 100%;
-}
-*/
 
 .usability {
-    height: 300px;
+    height: 400px;
     width: 400px;
     position: absolute;
     top: 500;
     left: 0;
+    /*    background-color: #f9f9f9;*/
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
 }
 
 .usability img {
+    position: relative;
     width: 100%;
 }
 
 .bbman {
     width: 400px;
-    height: 500px;
+    height: 550px;
     position: absolute;
-    top: 300;
+    top: 700;
     left: 300;
+    /*    background-color: #f9f9f9;*/
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
 }
 
 .bbman img {
+    position: relative;
     width: 100%;
 }
 
@@ -545,31 +572,68 @@ p {
     position: absolute;
     top: 600;
     left: 600;
-    height: 400px;
+    height: 230px;
     width: 700px;
-    background-color: #f9f9f9;
     color: darkgrey;
     text-align: center;
     font-size: 16px;
     font-weight: 200px;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.36);
 }
 
 .more img {
     width: 10%;
-    margin: 150 auto;
+    margin: 50 auto;
     display: block;
 }
 
-
-/*
-.item .usability img {
-    with: 100%;
+.item-des p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    padding-left: 20px;
 }
 
-.item .bbman img {
-    width: 100%;
+.item-des h4 {
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300 font-size: 16px;
 }
-*/
+
+.explore {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.5);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.explore h1 {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border: solid 2px white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    /*    vertical-align: central;*/
+    padding-top: 10px;
+    padding-left: 5px;
+    margin: 0;
+}
 
 
 /*--------------------------Footer---------------------------*/

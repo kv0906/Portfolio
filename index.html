@@ -37,7 +37,9 @@
 
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="hvr-underline-from-center" href="#works">Works.</a></li>
+                            <li><a class="hvr-underline-from-center" href="#folio">Works.</a></li>
+                            <li><a class="hvr-underline-from-center" href="#skills">Skills.</a></li>
+
 
                             <li><a class="hvr-underline-from-center" href="#about">About.</a></li>
 
@@ -174,24 +176,95 @@
 
                 <div class="item">
                     <img class="img-responsive" src="/images/screencapture-file-Users-ngoctran-Documents-Web-20projects-WebParis-index-html-1480903652835.png" />
+                    <div class="item-des">
+                        <div class="explore">
+                            <a href="https://github.com/kv0906/StaticWebProjects">
+
+                                <h1>Explore Project</h1>
+
+
+                            </a>
+
+                        </div>
+                        <h4>Static web projects</h4>
+                        <p>Simple static web projects to learn about Web layout,Grid System, a little bit about CSS3 Animation & Bootstrap framework </p>
+                    </div>
 
                 </div>
 
                 <div class="item airsound">
                     <img class="img-responsive" src="/images/airsound2.jpg" />
+                    <div class="explore">
+
+                        <a href="https://github.com/kv0906/Airsoundpollutiontracker">
+
+                            <h1>Explore Project</h1>
+
+
+                        </a>
+                    </div>
+                    <div class="item-des">
+                        <h4>Air sound pollution tracker</h4>
+                        <p>My first industrial project. The idea of project is to capture the air & sound pollution through a device with set of sensors. Process and handle logic by an Arduino board.</p>
+                    </div>
 
                 </div>
                 <div class="item kvbox">
 
+
+
+
                     <img class="img-responsive" src="/images/kvboxUI.PNG" />
+
+
+                    <div class="explore">
+                        <a href="https://github.com/kv0906/KvBox">
+
+                            <h1>Explore Project</h1>
+
+                        </a>
+
+                    </div>
+                    <div class="item-des">
+                        <h4>First android application</h4>
+                        <p>My first experience on Mobile Development (Android).
+                            <br> App features: Retrieving and managing files from Dropbox using Dropbox API
+                            <br> Simple User-interface</p>
+                    </div>
                 </div>
 
                 <div class="item usability">
                     <img class="img-responsive" src="/images/usability_test.jpg" />
 
+                    <div class="item-des">
+                        <h4>Usability testing for VietnamWorks</h4>
+                        <p>Another industrial project, we perform usability testing for website VietnamWorks
+                            <br> Activities: <strong>Testing</strong>, <strong>Report</strong>, <strong>Feedback</strong>, <strong>Process of design UI/UX</strong>
+                        </p>
+                    </div>
+
                 </div>
                 <div class="item bbman">
                     <img class="img-responsive" src="/images/bbman.jpg" />
+                    <div class="explore">
+
+                        <a href="https://bbman.herokuapp.com">
+
+                            <h1>Explore Project</h1>
+
+
+                        </a>
+                    </div>
+
+                    <div class="item-des">
+                        <h4>HTML5 Game</h4>
+                        <p>Bomber man clone game built with Phaser framework and HTML5
+                            <br> - Simple gameplay deploy on Heroky server.
+                            <br> - Multiplayers handling by Websocket.
+                            <br> - Object-oriented programming in Javascript.
+                            <br> - On going project, finish soon. :)
+                        </p>
+                    </div>
 
                 </div>
                 <div class="item more">
@@ -199,9 +272,11 @@
                     <img class="img-responsive" src="images/plus.png" />
 
                 </div>
+            </div>
 
 
         </section>
+        <!--        end Folio section  -->
 
 
         <footer id="footer">
@@ -209,9 +284,10 @@
 
             </div>
         </footer>
-        </div>
+        <!--       End Footer  -->
+
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/typed.js"></script>
         <script src='js/masonry.pkgd.min.js'></script>
         <script>
@@ -238,6 +314,28 @@
             $('#masonry').masonry({
                 itemSelector: '.item',
                 columnWidth: 50,
+                gutter: 10
+            });
+
+
+            //jQuery to collapse the navbar on scroll
+            $(window).scroll(function () {
+                if ($(".navbar").offset().top > 50) {
+                    $(".navbar-fixed-top").addClass("top-nav-collapse");
+                } else {
+                    $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                }
+            });
+
+            //jQuery for page scrolling feature - requires jQuery Easing plugin
+            $(function () {
+                $('a.page-scroll').bind('click', function (event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500, 'easeInOutExpo');
+                    event.preventDefault();
+                });
             });
         </script>
 
