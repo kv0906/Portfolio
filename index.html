@@ -7,6 +7,7 @@
     <title>Tran Huu Khanh Van</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/default.css" media="all" rel="stylesheet">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -51,7 +52,8 @@
         </header>
 
         <section class="sec-main">
-            <div class="col-md-12 greeting-heading">
+           <div class="row">
+               <div class="col-md-12 greeting-heading">
                 <span>H</span>
                 <span>e</span>
                 <span>l</span>
@@ -59,20 +61,26 @@
                 <span>o</span>
                 <span>&#46</span>
             </div>
-
-
-            <!--            <h1 class="main-heading">Where creativity happens.</h1>-->
-
-            <div class="main-heading"></div>
-
-
+               
+           </div>
+              <div class="container">
+                    <div id="typed-strings" >
+                        <p>I'm Van.</p>
+    <p>I'm fresh front-end developer</p>
+                   <p>I'm specialized in front-end web developemt.</p>
+                   <p>I'm not special talent.</p>
+                   <p>I'm just passionately curious</p>
+                    </div>
+                  <span class="main-heading col-md-12"></span>
+              </div>
+               
+            
         </section>
 
         <section id="about" class="sec-about">
             <div class="container">
                 <div class="row">
-                    <!--                   col-sm-offset-3-->
-                    <div class="about-intro col-sm-12 col-lg-6">
+                    <div class="wow fadeInUp about-intro col-sm-12 col-lg-6">
                         <h1>About me </h1>
                         <hr class="about-heading-hr" style="border: 4px solid #DA4177; width:30%" />
 
@@ -101,13 +109,13 @@
                                     <a href="https://www.linkedin.com/in/van-tran-a079b6118?trk=nav_responsive_tab_profile_pic" class="fa fa-linkedin" target="_blank"></a>
                                 </li>
                                 <li>
-                                    <a href="kv0906@yahoo.com" class="fa fa-envelope"></a>
+                                    <a href="kv090695@gmail.com" class="fa fa-envelope"></a>
                                 </li>
                             </ul>
                         </p>
                     </div>
                     <div class="avatar col-lg-6 col-sm-12">
-                        <img class="img-responsive" src="images/avatar.jpg" </div>
+                        <img class="wow fadeInRight img-responsive" src="images/avatar.jpg" </div>
                     </div>
                 </div>
         </section>
@@ -120,30 +128,30 @@
 
                 <div class="row">
 
-                    <div class="skillsets col-lg-6">
+                    <div class="wow bounceInUp skillsets col-lg-6">
                         <img class="frameworks_img img-responsive" src="images/skillset.png">
                         <div class="pts-icon col-lg-6">
                             <img class="img-responsive" src="images/pts-icon.png">
 
                         </div>
-                        <div class="github-icon col-lg-6">
+                        <div class="wow bounceInUp github-icon col-lg-6">
                             <img class="img-responsive" src="images/github-icon.png">
 
 
                         </div>
-                        <div class="responsive-icon col-lg-6">
+                        <div class="wow bounceInUp responsive-icon col-lg-6">
 
                             <img class="img-responsive" src="images/responsive-icon.png">
 
                         </div>
-                        <div class="sketch-icon">
+                        <div class="wow bounceInUp sketch-icon">
 
                             <img class="img-responsive" src="images/sketch-icon.png">
                         </div>
 
 
                     </div>
-                    <div class="personal_skills col-lg-6">
+                    <div class="wow fadeInRight personal_skills col-lg-6">
 
                         <h3>Specialized in</h3>
                         <span class="hvr-float-shadow">HTML</span>
@@ -174,7 +182,7 @@
 
             <div id="masonry" class=container>
 
-                <div class="item">
+                <div class="wow slideInLeft item">
                     <img class="img-responsive" src="/images/screencapture-file-Users-ngoctran-Documents-Web-20projects-WebParis-index-html-1480903652835.png" />
                     <div class="item-des">
                         <div class="explore">
@@ -192,7 +200,7 @@
 
                 </div>
 
-                <div class="item airsound">
+                <div class="wow bounceInDown item airsound">
                     <img class="img-responsive" src="/images/airsound2.jpg" />
                     <div class="explore">
 
@@ -209,7 +217,7 @@
                     </div>
 
                 </div>
-                <div class="item kvbox">
+                <div class="wow slideInRight item kvbox">
 
 
 
@@ -233,7 +241,7 @@
                     </div>
                 </div>
 
-                <div class="item usability">
+                <div class="wow slideInLeft item usability">
                     <img class="img-responsive" src="/images/usability_test.jpg" />
 
                     <div class="item-des">
@@ -244,7 +252,7 @@
                     </div>
 
                 </div>
-                <div class="item bbman">
+                <div class="wow slideInRight item bbman">
                     <img class="img-responsive" src="/images/bbman.jpg" />
                     <div class="explore">
 
@@ -267,7 +275,7 @@
                     </div>
 
                 </div>
-                <div class="item more">
+                <div class="wow slideInDown item more">
                     <p>Hope will be more in future :)</p>
                     <img class="img-responsive" src="images/plus.png" />
 
@@ -289,55 +297,10 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/typed.js"></script>
+        <script src="js/wow.min.js"></script>
         <script src='js/masonry.pkgd.min.js'></script>
-        <script>
-            $(function () {
-                $(".main-heading").typed({
-                    strings: ["^1800 I'm Van", "I'm fresh front-end developer", "I'm self-taught developer", "I'm passionate about web design"],
-                    typeSpeed: 20,
-                    backDelay: 500,
-                    showCursor: true,
-                    // character for cursor
-                    cursorChar: "|",
-                    loop: true
-                });
-            });
+        <script src="js/myscript.js"></script>
 
-
-
-            //            var container = document.querySelector('#masonry');
-            //            var masonry = new Masonry(container, {
-            //                columnWidth: 50,
-            //                itemSelector: '.item',
-            //
-            //            });
-            $('#masonry').masonry({
-                itemSelector: '.item',
-                columnWidth: 50,
-                gutter: 10
-            });
-
-
-            //jQuery to collapse the navbar on scroll
-            $(window).scroll(function () {
-                if ($(".navbar").offset().top > 50) {
-                    $(".navbar-fixed-top").addClass("top-nav-collapse");
-                } else {
-                    $(".navbar-fixed-top").removeClass("top-nav-collapse");
-                }
-            });
-
-            //jQuery for page scrolling feature - requires jQuery Easing plugin
-            $(function () {
-                $('a.page-scroll').bind('click', function (event) {
-                    var $anchor = $(this);
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1500, 'easeInOutExpo');
-                    event.preventDefault();
-                });
-            });
-        </script>
 
 </body>
 

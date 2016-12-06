@@ -23,10 +23,8 @@ footer {
     padding: 3em 0;
 }
 
-form {
-    @media screen and (max-width: 768px) and (min-width: 485px) {
-        max-width: 70%;
-    }
+@media screen and (max-width: 768px) and (min-width: 485px) {
+    max-width: 70%;
 }
 
 ul {
@@ -37,11 +35,6 @@ ul {
 
 a {
     @extend %transition;
-}
-
-body {
-    /*    font-family: 'Open Sans', sans-serif;*/
-    /*    font-weight: 300;*/
 }
 
 
@@ -131,14 +124,11 @@ p {
 
 .greeting-heading {
     text-align: center;
-    height: 100%;
-    perspective: 1000px;
+    height: 70%;
 }
 
 .greeting-heding span {
     display: inline-block;
-    /*    margin-left: -20px;*/
-    /*    transform-origin: 30% 50%;*/
 }
 
 
@@ -196,18 +186,11 @@ p {
 }
 
 .main-heading {
+    display: inline;
+/*    display: inline;*/
     font-family: 'Ubuntu', monospace;
     font-size: 40px;
     text-align: center;
-    /*    text-transform: uppercase;*/
-    position: absolute;
-    top: 100;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    padding: 0;
-    margin: auto;
     height: 40px;
     color: black;
 }
@@ -648,8 +631,6 @@ footer {
 
 /* code for animated blinking cursor */
 
-
-/*
 .typed-cursor {
     opacity: 1;
     font-weight: 100;
@@ -719,7 +700,6 @@ footer {
         opacity: 1;
     }
 }
-*/
 
 @keyframes pulse {
     from {
