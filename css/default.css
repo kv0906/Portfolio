@@ -48,6 +48,9 @@ a {
 .navbar-default {
     background: #fff;
 }
+.navbar a {
+    text-align: center;
+}
 
 
 /*Hover effect for nav*/
@@ -602,9 +605,9 @@ p {
 /*--------------------------Footer---------------------------*/
 
 footer {
-    background: #000;
+    background: white;
     font-family: 'Raleway', sans-serif;
-    color: #f9f9f9;
+    color: black;
 }
 
 footer span {
