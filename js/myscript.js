@@ -6,9 +6,9 @@ $(function () {
         stringsElement: $('#typed-strings'),
         typeSpeed: 20,
         backDelay: 500,
-        showCursor: true,
+        showCursor: false,
         // character for cursor
-        cursorChar: "|",
+//        cursorChar: "|",
         loop: true
     });
 });
@@ -32,12 +32,11 @@ $(window).scroll(function () {
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function () {
-    $('a.page-scroll').bind('click', function (event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-}); 
+$(function() {
+  $('.js-nav a, .js-connect').click(function(e) {
+    e.preventDefault();
+    $('body, html').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 750);
+  });
+});
